@@ -1,0 +1,151 @@
+/* ========================= OUR STORY SECTION ========================= */
+
+/* ========================= THEME BACKGROUNDS ========================= */
+
+.ourstory-section.light {
+  background: #ffffff !important;
+}
+
+.ourstory-section.dark {
+  background: #0d0f12 !important;
+}
+
+/* Light Mode Text */
+.ourstory-section.light .ourstory-title {
+  color: #111 !important;
+}
+
+.ourstory-section.light .ourstory-text {
+  color: #333 !important;
+}
+
+/* Dark Mode Text */
+.ourstory-section.dark .ourstory-title {
+  color: #fff !important;
+}
+
+.ourstory-section.dark .ourstory-text {
+  color: #ddd !important;
+}
+
+/* ========================= LEFT CONTENT ========================= */
+
+.ourstory-title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.ourstory-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.story-btn {
+  background: transparent;
+  border: 1px solid #1566ff;
+  color: #1566ff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.story-btn:hover {
+  background: #1566ff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ========================= RIGHT IMAGES ========================= */
+
+.ourstory-right {
+  position: relative;
+}
+
+.story-img-wrapper {
+  width: 48%;
+  height: 330px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  transition: 0.4s ease;
+}
+
+.story-img-wrapper:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img1 {
+  margin-top: 20px;
+}
+
+.img2 {
+  margin-bottom: 20px;
+}
+
+/* ========================= ANIMATION ========================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpAnimation 0.9s ease forwards;
+}
+
+@keyframes fadeUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (max-width: 992px) {
+  .story-img-wrapper {
+    height: 280px;
+  }
+
+  .ourstory-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourstory-section {
+    text-align: center;
+  }
+
+  .story-img-wrapper {
+    width: 46%;
+    height: 240px;
+  }
+
+  .img1,
+  .img2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourstory-title {
+    font-size: 30px;
+  }
+
+  .story-btn {
+    width: 100%;
+  }
+
+  .story-img-wrapper {
+    height: 185px;
+  }
+}

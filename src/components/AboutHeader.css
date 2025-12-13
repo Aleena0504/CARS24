@@ -1,0 +1,39 @@
+.about-header {
+  height: 70vh;
+  background: url("/images/abtbanner.jpg.jpg") center 70% / cover no-repeat fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 🔥 ZOOM EFFECT */
+  animation: zoomBanner 10s ease-in-out infinite alternate;
+}
+
+/* Dark overlay */
+.about-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Text styling remains same */
+.about-header-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  transform: translateY(-80px);
+  transition: 0.3s ease;
+}
+
+/* Zoom animation keyframes */
+@keyframes zoomBanner {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 115%; /* Zoom level */
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Lamborghini Huracán",
+      "brand": "Lamborghini",
+      "category": "supercar",
+      "hp": 602,
+      "top_speed": 325,
+      "seating": 2,
+      "year": 2022,
+      "price": 280000,
+      "img": "/images/inv1.jpg",
+      "tag": "Supercar",
+      "description": "The Lamborghini Huracán delivers extreme performance with a naturally aspirated V10 engine and aerodynamic precision.",
+      "specs": [
+        "5.2L V10 Engine",
+        "602 HP",
+        "0–100 km/h in 2.9 sec",
+        "7-Speed Dual-Clutch",
+        "Top Speed: 325 km/h"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Porsche 911 Turbo S",
+      "brand": "Porsche",
+      "category": "sports",
+      "hp": 640,
+      "top_speed": 330,
+      "seating": 4,
+      "year": 2023,
+      "price": 210000,
+      "img": "/images/inv2.jpg",
+      "tag": "Sports",
+      "description": "The 911 Turbo S delivers extraordinary acceleration, precision handling, and refined comfort.",
+      "specs": [
+        "3.8L Twin-Turbo Flat-6",
+        "640 HP",
+        "0–100 km/h in 2.6 sec",
+        "AWD Launch Control",
+        "Top Speed: 330 km/h"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "BMW M4 Competition",
+      "brand": "BMW",
+      "category": "performance",
+      "hp": 503,
+      "top_speed": 290,
+      "seating": 4,
+      "year": 2021,
+      "price": 110000,
+      "img": "/images/inv3.jpg",
+      "tag": "Performance",
+      "description": "The M4 Competition combines aggressive design, track-focused engineering, and high-output turbo performance.",
+      "specs": [
+        "3.0L Twin-Turbo Inline-6",
+        "503 HP",
+        "0–100 km/h in 3.8 sec",
+        "RWD or AWD",
+        "Top Speed: 290 km/h"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Audi R8 V10",
+      "brand": "Audi",
+      "category": "supercar",
+      "hp": 562,
+      "top_speed": 330,
+      "seating": 2,
+      "year": 2020,
+      "price": 190000,
+      "img": "/images/inv4.jpg",
+      "tag": "Supercar",
+      "description": "The Audi R8 V10 blends exotic styling with everyday practicality, powered by a naturally aspirated V10 engine.",
+      "specs": [
+        "5.2L V10 Engine",
+        "562 HP",
+        "0–100 km/h in 3.4 sec",
+        "Quattro AWD",
+        "Top Speed: 330 km/h"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mercedes AMG GT",
+      "brand": "Mercedes",
+      "category": "luxury",
+      "hp": 469,
+      "top_speed": 310,
+      "seating": 2,
+      "year": 2021,
+      "price": 150000,
+      "img": "/images/inv5.jpg",
+      "tag": "Luxury",
+      "description": "A luxury grand tourer offering aggressive AMG performance, premium interiors, and a signature exhaust note.",
+      "specs": [
+        "4.0L Twin-Turbo V8",
+        "469 HP",
+        "0–100 km/h in 3.9 sec",
+        "9-Speed AMG Transmission",
+        "Top Speed: 310 km/h"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tesla Model S Plaid",
+      "brand": "Tesla",
+      "category": "electric",
+      "hp": 1020,
+      "top_speed": 322,
+      "seating": 5,
+      "year": 2024,
+      "price": 120000,
+      "img": "/images/inv6.jpg",
+      "tag": "Electric",
+      "description": "The quickest electric sedan ever made, offering unmatched acceleration and futuristic technology.",
+      "specs": [
+        "Tri-Motor AWD",
+        "1020 HP",
+        "0–100 km/h in 2.1 sec",
+        "Range: 628 km",
+        "Top Speed: 322 km/h"
+      ]
+    }
+  ]
+}

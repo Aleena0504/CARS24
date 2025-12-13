@@ -1,0 +1,23 @@
+/* =========================================================
+   FULL PAGE BACKGROUND THEME FIX - SAFE VERSION
+========================================================= */
+
+body.light {
+  background: #ffffff;
+  color: #111;
+}
+
+body.dark {
+  background: #0d0f12;
+  color: #fff;
+}
+
+/* Remove only Home page spacing issues */
+.home-section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home-section .container {
+  padding: 0 !important;
+}

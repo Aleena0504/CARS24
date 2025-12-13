@@ -1,0 +1,119 @@
+/* ========================= FOOTER ========================= */
+
+.footer {
+  padding: 70px 80px 40px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease-in-out;
+}
+
+/* -------- DARK THEME -------- */
+.footer.dark {
+  background: linear-gradient(180deg, #0d0d0d, #0a0a0a);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer.dark .footer-top h2,
+.footer.dark .footer-col h3 {
+  color: #fff;
+}
+
+.footer.dark .footer-top p,
+.footer.dark .footer-col p,
+.footer.dark .footer-link {
+  color: #ccc;
+}
+
+.footer.dark .footer-bottom {
+  color: #777;
+}
+
+/* Hover effect - dark */
+.footer.dark .footer-link:hover,
+.footer.dark .footer-col p:hover {
+  color: #1566ff;
+}
+
+/* -------- LIGHT THEME -------- */
+.footer.light {
+  background: linear-gradient(180deg, #ffffff, #f3f3f3);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer.light .footer-top h2,
+.footer.light .footer-col h3 {
+  color: #000;
+}
+
+.footer.light .footer-top p,
+.footer.light .footer-col p,
+.footer.light .footer-link {
+  color: #444;
+}
+
+.footer.light .footer-bottom {
+  color: #666;
+}
+
+/* Hover effect - light */
+.footer.light .footer-link:hover,
+.footer.light .footer-col p:hover {
+  color: #0a58ca;
+}
+
+/* -------- MIDDLE CONTENT -------- */
+.footer-mid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer-col p,
+.footer-link {
+  font-size: 15px;
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* -------- BOTTOM COPYRIGHT -------- */
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpAnimation 0.9s ease-out forwards;
+}
+
+@keyframes fadeUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 900px) {
+  .footer-mid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 25px;
+  }
+}

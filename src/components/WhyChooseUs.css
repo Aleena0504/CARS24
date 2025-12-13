@@ -1,0 +1,90 @@
+/* ========================= WHY CHOOSE US ========================= */
+
+/* Remove unwanted extra spacing */
+.why-section {
+  padding: 20px 0 !important;
+  margin: 0 !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT MODE */
+.why-section.light {
+  background: #ffffff;
+  color: #111;
+}
+
+/* DARK MODE */
+.why-section.dark {
+  background: #0d0f12;
+  color: #f2f2f2;
+}
+
+/* Title */
+.why-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px !important;
+}
+
+/* ========================= CARD STYLING ========================= */
+
+.why-box {
+  padding: 25px ;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  margin: 0 auto;         /* Centers the box */
+}
+
+/* LIGHT MODE CARD */
+.light .why-box {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #111;
+}
+
+/* DARK MODE CARD */
+.dark .why-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f2f2f2;
+}
+
+/* Hover Effect */
+.why-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Icon */
+.why-icon {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Headings */
+.why-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Description */
+.why-desc {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* ========================= ANIMATION ========================= */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

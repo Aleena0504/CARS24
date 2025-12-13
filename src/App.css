@@ -1,0 +1,192 @@
+/* =========================================================
+   BRAND TEXT
+========================================================= */
+.brand-text {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+body.light .brand-text {
+  color: #000;
+}
+
+body.dark .brand-text {
+  color: #fff;
+}
+
+
+/* =========================================================
+   SWIPER THEME FIX — Removes All White Gaps
+========================================================= */
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  background: transparent !important; /* prevents white background */
+}
+
+body.dark .swiper,
+body.dark .swiper-wrapper,
+body.dark .swiper-slide {
+  background: #080b12 !important;  /* dark mode */
+}
+
+body.light .swiper,
+body.light .swiper-wrapper,
+body.light .swiper-slide {
+  background: #f3f4f7 !important; /* soft white instead of pure white */
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+  height: 90vh;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* ---------- DARK THEME ---------- */
+body.dark .hero-section {
+  color: #ffffff;
+}
+
+body.dark .hero-left h1,
+body.dark .hero-left p {
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- LIGHT THEME ---------- */
+body.light .hero-section {
+  color: #111;
+}
+
+body.light .hero-left h1,
+body.light .hero-left p {
+  text-shadow: none;
+}
+
+/* Text Area */
+.hero-left {
+  max-width: 550px;
+}
+
+.hero-left h1 {
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.hero-left button {
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   STICKY TEST DRIVE BUTTON
+========================================================= */
+
+.sticky-testdrive-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+
+  background: #1566ff;
+  color: #fff;
+  border: none;
+
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+}
+
+.sticky-testdrive-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* MOBILE FIX */
+@media (max-width: 480px) {
+  .sticky-testdrive-btn {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   BACKDROP BLUR (used for modals/popups)
+========================================================= */
+.blur-backdrop {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1040;
+}
+
+
+/* =========================================================
+   GLOBAL PAGE SPACING FIX
+========================================================= */
+
+.page-content {
+  padding-top: 60px;
+}
+
+
+/* =========================================================
+   FIX: REMOVE EXTRA WHITE SPACE BELOW HERO
+========================================================= */
+
+body.dark .home-wrapper,
+body.dark .page-content {
+  background: linear-gradient(160deg, #05070d, #0a0e16, #0d111c);
+}
+
+body.light .home-wrapper,
+body.light .page-content {
+  background: #f3f4f7;
+}
+/* INVENTORY PAGE THEME SCOPED ONLY */
+.inventory-page.light .inventory-title {
+  color: #111 !important;
+}
+
+.inventory-page.dark .inventory-title {
+  color: #ffffff !important;
+}
+
+.inventory-page.light .inventory-sub {
+  color: #050505 !important;
+}
+
+.inventory-page.dark .inventory-sub {
+  color: #cccccc !important;
+}

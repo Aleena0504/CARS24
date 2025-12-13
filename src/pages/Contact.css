@@ -1,0 +1,243 @@
+/* ========================= CONTACT PAGE WRAPPER ========================= */
+.contact-page {
+  padding: 60px 80px;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+}
+
+/* DARK THEME */
+.contact-page.dark {
+  background: #090d17;
+  color: #ffffff;
+}
+
+/* LIGHT THEME */
+.contact-page.light {
+  background: #f5f7ff;
+  color: #111;
+}
+
+/* ========================= HEADER ========================= */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.contact-sub {
+  font-size: 18px;
+  opacity: 0.8;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* ========================= CONTACT CARDS ========================= */
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 260px;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* ICON */
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* TEXT INSIDE CARD */
+.contact-card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact-card span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* DARK MODE CARDS */
+.contact-page.dark .contact-card {
+  background: #0f1629;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+}
+
+.contact-page.dark .contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #1566ff;
+  box-shadow: 0 12px 30px rgba(21,102,255,0.25);
+}
+
+/* LIGHT MODE CARDS */
+.contact-page.light .contact-card {
+  background: #ffffff;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.contact-page.light .contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #1566ff;
+  box-shadow: 0 10px 25px rgba(21,102,255,0.25);
+}
+
+/* ========================= FORM + MAP ========================= */
+
+.contact-main {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* FORM */
+.contact-form {
+  width: 50%;
+  padding: 30px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* DARK FORM */
+.contact-page.dark .contact-form {
+  background: #0b1220;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+  color: white;
+}
+
+/* LIGHT FORM */
+.contact-page.light .contact-form {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* INPUT + TEXTAREA */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.2s, background 0.2s;
+}
+
+/* DARK INPUTS */
+.contact-page.dark .contact-form input,
+.contact-page.dark .contact-form textarea {
+  background: #121b33;
+  border: 1px solid #27314a;
+  color: white;
+}
+
+/* LIGHT INPUTS */
+.contact-page.light .contact-form input,
+.contact-page.light .contact-form textarea {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  color: #222;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1566ff;
+}
+
+/* ERROR STYLING */
+.invalid {
+  border: 2px solid #ff4d4d !important;
+}
+
+.error-span {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  padding: 13px;
+  width: 100%;
+  font-size: 16px;
+  background: #1566ff;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background: #0b4ec7;
+  transform: translateY(-2px);
+}
+
+/* ========================= MAP ========================= */
+
+.contact-map {
+  width: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 14px;
+  border: none;
+}
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (max-width: 900px) {
+  .contact-main {
+    flex-direction: column;
+  }
+  .contact-form,
+  .contact-map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 30px;
+  }
+  .contact-sub {
+    font-size: 15px;
+  }
+  .contact-page {
+    padding: 30px 20px;
+  }
+  .contact-card {
+    width: 100%;
+  }
+}

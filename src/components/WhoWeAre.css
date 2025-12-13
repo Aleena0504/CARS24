@@ -1,0 +1,140 @@
+/* ========================= WHO WE ARE SECTION ========================= */
+
+.whoweare-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 80px;
+  gap: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+/* ========================= DARK THEME ========================= */
+.whoweare-section.dark {
+  background: #0d0d0d;           /* solid dark background */
+}
+
+.whoweare-section.dark .whoweare-title {
+  color: #ffffff;
+}
+
+.whoweare-section.dark .whoweare-text {
+  color: #e0e0e0;
+  opacity: 1;
+}
+
+/* ========================= LIGHT THEME ========================= */
+.whoweare-section.light {
+  background: #f8f8f8;           /* soft white for readability */
+}
+
+.whoweare-section.light .whoweare-title {
+  color: #000;
+}
+
+.whoweare-section.light .whoweare-text {
+  color: #333;
+}
+
+/* ------------ LEFT SIDE ------------ */
+.whoweare-left {
+  width: 50%;
+}
+
+.whoweare-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.whoweare-text {
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* BUTTON */
+.learn-more-btn {
+  background: #1566ff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: #0e47c1;
+  transform: translateY(-3px);
+}
+
+/* ------------ RIGHT IMAGE ------------ */
+.whoweare-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Shadow adjusts with theme */
+.whoweare-section.dark .img-wrapper {
+  box-shadow: 0 12px 28px rgba(255,255,255,0.05);
+}
+
+.whoweare-section.light .img-wrapper {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.whoweare-img {
+  width: 100%;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+.img-wrapper:hover .whoweare-img {
+  transform: scale(1.08);
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpAnimation 0.9s ease-out forwards;
+}
+
+@keyframes fadeUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 900px) {
+  .whoweare-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 25px;
+  }
+
+  .whoweare-left,
+  .whoweare-right {
+    width: 100%;
+  }
+
+  .whoweare-title {
+    font-size: 32px;
+  }
+
+  .whoweare-text {
+    font-size: 15px;
+  }
+}
