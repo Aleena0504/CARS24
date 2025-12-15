@@ -4,7 +4,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 
-const API = "http://localhost:5000/cars";
+const API = "/api/cars";
+
 
 export default function Inventory() {
   const { theme } = useContext(ThemeContext);
